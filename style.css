@@ -87,8 +87,15 @@ header {
   &:hover {
     transform:
       perspective(500px) translateZ(30px) scale(1.08);
+       
+       &:hover {
+            transform:
+                perspective(500px) translateZ(30px) scale(1.08);
 
-
+            filter:
+                drop-shadow(0 10px 20px rgba(57, 230, 10, 0.5));
+        }
+        
   }
 }
 
