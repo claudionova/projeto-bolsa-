@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 :root {
@@ -77,14 +78,25 @@ header {
 
 .carrinho{
   width: 50px;
+   transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
+
+  transform-style: preserve-3d;
+
+  &:hover {
+    transform:
+      perspective(500px) translateZ(30px) scale(1.08);
+
+
+  }
 }
 
 
 
 .hero {
     width: 100%;
-    min-height: 400px;
-
+    height:600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,6 +105,11 @@ header {
 
     background: #ffffff;
     overflow: hidden;
+
+    background-image: url("bolsa-wallpaper.jpg");
+    background-size: cover;
+
+    
 }
 
 
@@ -142,22 +159,6 @@ header {
     background: #008f27;
 }
 
-
-
-.hero-image {
-    width: 55%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 650px;
-    background: image(url(bolsa-wallpaper.jpg)'');
-    display: block;
-}
 
 
 
@@ -333,4 +334,9 @@ header {
     .links {
         flex-wrap: wrap;
     }
+}
+
+
+#1{
+    color: #00a82d;
 }
